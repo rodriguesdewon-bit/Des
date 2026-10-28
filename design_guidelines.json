@@ -1,0 +1,177 @@
+{
+  "project_name": "KmControl",
+  "archetype": "The Performance Pro & Tactical Command (Mobile-First Vehicle Management)",
+  "theme": "dark_default",
+  "typography": {
+    "heading_family": "Plus Jakarta Sans",
+    "body_family": "DM Sans",
+    "mono_family": "JetBrains Mono",
+    "scale_px": {
+      "display": 56,
+      "h1": 40,
+      "h2": 28,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "css_import": "@import \"@fontsource-variable/plus-jakarta-sans\";\n@import \"@fontsource-variable/dm-sans\";\n@import \"@fontsource-variable/jetbrains-mono\";",
+    "theme_aliases": {
+      "--font-heading": "'Plus Jakarta Sans Variable', sans-serif",
+      "--font-sans": "'DM Sans Variable', sans-serif",
+      "--font-mono": "'JetBrains Mono Variable', monospace"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#090d16",
+        "on_bg": "#f8fafc",
+        "on_bg_muted": "#94a3b8",
+        "roles": {
+          "border": "#1e293b",
+          "link": "#34d399",
+          "error": "#fb7185",
+          "success": "#10b981",
+          "warning": "#f59e0b"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#0f172a",
+        "on_bg": "#f8fafc",
+        "on_bg_muted": "#94a3b8",
+        "roles": {
+          "border": "#334155",
+          "accent": "#10b981",
+          "error": "#f43f5e",
+          "warning": "#f59e0b"
+        }
+      },
+      {
+        "name": "card_elevated",
+        "kind": "solid",
+        "bg": "#1e293b",
+        "on_bg": "#ffffff",
+        "on_bg_muted": "#cbd5e1",
+        "roles": {
+          "border": "#475569"
+        }
+      },
+      {
+        "name": "interactive_button",
+        "kind": "solid",
+        "bg": "#10b981",
+        "on_bg": "#022c22",
+        "on_bg_muted": "#064e3b"
+      },
+      {
+        "name": "badge_alert_amber",
+        "kind": "solid",
+        "bg": "#78350f",
+        "on_bg": "#fef3c7",
+        "on_bg_muted": "#fde68a"
+      },
+      {
+        "name": "badge_critical_rose",
+        "kind": "solid",
+        "bg": "#881337",
+        "on_bg": "#ffe4e6",
+        "on_bg_muted": "#fecdd3"
+      },
+      {
+        "name": "badge_pro_emerald",
+        "kind": "solid",
+        "bg": "#064e3b",
+        "on_bg": "#d1fae5",
+        "on_bg_muted": "#a7f3d0"
+      },
+      {
+        "name": "header_glass",
+        "kind": "glass",
+        "contrast_against": "#090d16",
+        "guarantee": "backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80 shadow-md",
+        "on_bg": "#f8fafc",
+        "on_bg_muted": "#94a3b8"
+      }
+    ],
+    "accent": "#10b981",
+    "on_accent": "#022c22",
+    "secondary_accents": {
+      "alert_amber": "#f59e0b",
+      "critical_rose": "#e11d48",
+      "brand_emerald_glow": "#34d399"
+    }
+  },
+  "entry_surfaces": {
+    "/": "mobile-first vehicle hero with quick action dashboard preview, financial telemetry cards and immediate trial CTA",
+    "/login": "split branded command login — mobile tactical vehicle passcard top, credentials & Google OAuth bottom",
+    "/onboarding": "tactical 5-step vehicle telemetry setup wizard with large touch targets and instant km/L & state fuel estimation",
+    "/dashboard": "dense command grid — monthly burn rate, daily cost, cost/km ticker, maintenance urgency radar and PRO reserve fund",
+    "/checkout": "high-converting pricing matrix — Anual R$149,90 featured badge, Mensal and Pix with live EMV copy-paste and QR code modal",
+    "/admin": "compact administrative approval ledger for Pix confirmations and PRO lifetime activations"
+  },
+  "logo_and_brand_spec": {
+    "brand_name": "KmControl",
+    "tagline": "Gestão Inteligente & Previsão de Custo por KM",
+    "icon_structure": "Geometric tachometer / speedometer needle fused with a precision geometric hexagonal lock and neon emerald chevron",
+    "color_scheme": "Emerald Green (#10B981) + Slate-900 (#0F172A) + Pure White (#FFFFFF)"
+  },
+  "ui_components_and_patterns": {
+    "mobile_first_touch_targets": {
+      "min_height_cta": "h-14 (56px) or h-16 (64px)",
+      "vehicle_selector_buttons": "3 large responsive cards for Moto, Carro, Caminhão with rich iconography, active emerald ring, and subtle tactile haptics"
+    },
+    "onboarding_wizard_steps": [
+      "Passo 1: Tipo de Veículo (Moto / Carro / Caminhão)",
+      "Passo 2: Marca, Modelo, Ano e Hodômetro (km atual)",
+      "Passo 3: Aquisição (Quitado/À vista vs Financiado com parcela e meses restantes)",
+      "Passo 4: Consumo sugerido (km/L) e preço médio de combustível por estado (com fallback e GPS)",
+      "Passo 5: Rotina de uso (km/dia e dias da semana ativos)"
+    ],
+    "dashboard_widgets": [
+      "Total Gasto Mensal Estimado (Combustível + Manutenção Proporcional + Financiamento)",
+      "Custo Diário de Rodagem e Custo Real por KM (R$/km)",
+      "Fundo de Reserva Diário Sugerido (PRO feature)",
+      "Radar de Manutenções Preventivas (Óleo, Pneus, Pastilhas, Correia/Relação com status em km e tempo)",
+      "Seletor Multi-veículo no cabeçalho (PRO)"
+    ],
+    "checkout_and_pix": {
+      "plans": [
+        {"name": "Anual", "price": "R$ 149,90/ano", "highlight": true, "badge": "Melhor Escolha (Economia de 55%)"},
+        {"name": "Mensal", "price": "R$ 14,90/mês", "highlight": false, "badge": "Sem fidelidade"},
+        {"name": "Pix Avulso (1 Mês)", "price": "R$ 24,90 avulso", "highlight": false, "badge": "Acesso Imediato"}
+      ],
+      "pix_features": "Geração dinâmica de QR Code + Código Copia e Cola EMV + Botão Copiar com toast 'Copiado!' + Botão 'Já realizei o pagamento' que seta status 'Pendente' para validação do Admin"
+    },
+    "admin_panel": {
+      "features": "Lista de pagamentos pendentes com comprovante/id, botões de 'Aprovar PRO' e 'Rejeitar', e badge PRO Vitalício garantido para rodriguesdewon@gmail.com"
+    },
+    "internationalization": {
+      "languages": ["PT-BR (Padrão)", "EN", "ES"],
+      "currencies": ["BRL (R$)", "USD ($)", "EUR (€)"]
+    }
+  },
+  "motion_and_interactions": {
+    "engine": "motion (from 'motion/react')",
+    "card_hover": "transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
+    "onboarding_slide": "staggered slide-in from right with spring physics",
+    "tactile_button_press": "whileTap={{ scale: 0.97 }}"
+  },
+  "accessibility": {
+    "touch_size": "Minimum 48px touch targets for mobile accessibility",
+    "apca_contrast": "All text tokens meet 4.5:1 on their respective dark backgrounds",
+    "testing_attributes": "All buttons, inputs, modals and status pills must have explicit data-testid attributes"
+  },
+  "instructions_to_main_agent": [
+    "1. Keep dark mode active by default (add class='dark' to <html> tag in index.html and index.css).",
+    "2. Ensure all 5 onboarding steps work seamlessly and calculate real-time cost-per-km previews.",
+    "3. Support quick demo auto-fill or vehicle presets so the user can test instant calculations.",
+    "4. Implement Pix QR code simulation with EMV Copia e Cola, copy feedback toast, and Admin payment approval queue.",
+    "5. Automatically give Lifetime PRO to the account 'rodriguesdewon@gmail.com'.",
+    "6. Make sure language switcher (PT-BR/EN/ES) and currency formatting react instantly.",
+    "7. Include high-contrast charts (Recharts) for cost distribution: Combustível, Manutenção e Parcela."
+  ]
+}
